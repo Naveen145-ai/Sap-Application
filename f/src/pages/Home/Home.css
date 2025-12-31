@@ -1,0 +1,471 @@
+/* SAP Form Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* SAP Form Container */
+.sap-form-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 24px;
+}
+
+.brand-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6B7280;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #4F46E5;
+  background-color: #F3F4F6;
+}
+
+.nav-link.active {
+  color: #4F46E5;
+  background-color: #EEF2FF;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form Header */
+.form-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.form-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+.form-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Student Information Section */
+.student-info-section {
+  padding: 30px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.student-info-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 20px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.info-item input {
+  padding: 12px 16px;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.info-item input:focus {
+  outline: none;
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Reference Section */
+.reference-section {
+  padding: 30px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.reference-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 20px 0;
+}
+
+.reference-table {
+  overflow-x: auto;
+}
+
+.reference-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.reference-table th,
+.reference-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #E5E7EB;
+}
+
+.reference-table th {
+  background: #F9FAFB;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+}
+
+.reference-table td {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+/* Activity Count Section */
+.activity-count-section {
+  padding: 30px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.activity-count-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 20px 0;
+}
+
+.count-table {
+  overflow-x: auto;
+}
+
+.count-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.count-table th,
+.count-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #E5E7EB;
+}
+
+.count-table th {
+  background: #F9FAFB;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+}
+
+.count-table input {
+  width: 80px;
+  padding: 8px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.count-table input:focus {
+  outline: none;
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+/* Activity Section */
+.activity-section {
+  padding: 30px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.activity-section:last-of-type {
+  border-bottom: none;
+}
+
+.activity-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 20px 0;
+}
+
+.footnote {
+  font-size: 0.9rem;
+  color: #6B7280;
+  font-style: italic;
+  margin: -15px 0 20px 0;
+}
+
+.activity-table {
+  overflow-x: auto;
+}
+
+.activity-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-size: 13px;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border: 1px solid #E5E7EB;
+  vertical-align: middle;
+}
+
+.activity-table th {
+  background: #F9FAFB;
+  font-weight: 600;
+  color: #374151;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.activity-table td {
+  color: #6B7280;
+  font-size: 12px;
+}
+
+.activity-table input {
+  width: 60px;
+  padding: 6px 8px;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.activity-table input:focus {
+  outline: none;
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+/* First column styling for activity names */
+.activity-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #1F2937;
+  background: #F9FAFB;
+  white-space: nowrap;
+}
+
+/* Points values styling */
+.activity-table tr:nth-child(2) td {
+  font-weight: 600;
+  color: #059669;
+  background: #ECFDF5;
+}
+
+/* Submit Section */
+.submit-section {
+  padding: 30px;
+  text-align: center;
+  background: #F9FAFB;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Signature Section */
+.signature-section {
+  padding: 30px;
+  background: #F9FAFB;
+  border-top: 1px solid #E5E7EB;
+}
+
+.signature-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.signature-line span {
+  font-weight: 600;
+  color: #374151;
+}
+
+.signature-box {
+  width: 200px;
+  height: 40px;
+  border: 2px dashed #D1D5DB;
+  border-radius: 8px;
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sap-form-container {
+    padding: 10px;
+  }
+  
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .form-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .form-header h2 {
+    font-size: 1.1rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1.6rem;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .activity-table {
+    font-size: 11px;
+  }
+  
+  .activity-table th,
+  .activity-table td {
+    padding: 6px 4px;
+  }
+  
+  .activity-table input {
+    width: 50px;
+    font-size: 11px;
+  }
+  
+  .signature-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .signature-box {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .nav-bar,
+  .submit-section {
+    display: none;
+  }
+  
+  .form-wrapper {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .activity-table {
+    font-size: 10px;
+  }
+  
+  .activity-table th,
+  .activity-table td {
+    padding: 4px 2px;
+  }
+}
